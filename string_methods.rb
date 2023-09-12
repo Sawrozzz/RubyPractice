@@ -11,7 +11,7 @@
  puts " I am reveresd string".reverse
 
  # to capitalized first letter 
- puts " my first letter is been capitalized by this piece of code".capitalize
+ puts "my first letter is been capitalized by this piece of code".capitalize
 
 
  # check if the string exists within string
