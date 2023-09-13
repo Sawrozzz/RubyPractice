@@ -55,8 +55,6 @@
 #   salary["Sita"] = 50000
 #   puts salary
 
-
-
 # multi level hash , also called nutshell . Basically the multilevel hash used in dictionary. 
 
 dict = {
