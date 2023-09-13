@@ -1,3 +1,10 @@
+hlo = Array.new
+puts hlo
+
+
+
+
+
 # people = ['Ram', 'Hari', 'Gopal']
 # puts people.first
 # puts people.last
@@ -33,6 +40,15 @@
 # data = ["this is string" ,10.3 , 10, [true, "hello"], {key:"value"}]
 # puts data
 
-person = [["Adam", 21], ["Jake", 23], ["Paul", 30]]
-# puts person[0][0]
-puts person[2][0]
+# person = [["Adam", 21], ["Jake", 23], ["Paul", 30]]
+#  puts person[0][0]
+# puts person[2][0]
+
+
+# push item in arrey  using "<<" operator
+# main = ["do", "did","did","did"]
+# puts main << ("does")
+
+# to reverse the order  of the array 
+# puts main.reverse
+# puts main.uniq
