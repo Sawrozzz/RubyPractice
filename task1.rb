@@ -52,12 +52,13 @@ student= Hash.new
     student["#{i}"]["Average"]=avg
     student["#{i}"]["Grade"]=grade
 end
-
-student.each do |i,j|
-    puts "Student grades and averages:"
-    puts "Name:#{student["#{i}"]["Name"]}"
-    puts "Average Marks:#{student["#{i}"]["Average"]}"
-    puts "Letter Grade: #{student["#{i}"]["Grade"]}"
+puts "Student grades and averages:"
+student.each do |key,value|
+    
+    # puts "Name:#{student["#{key}"]["Name"]}"
+    puts "Name:#{value["Name"]}"
+    puts "Average Marks:#{student["#{key}"]["Average"]}"
+    puts "Letter Grade: #{student["#{key}"]["Grade"]}"
     puts " " 
     end
 
