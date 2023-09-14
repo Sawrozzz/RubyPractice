@@ -10,45 +10,58 @@
 # inside this we have make a hash that include the student grade and according to the grade we have to differetiate their 
 # position, for eg , if the grade is above 80% we print "A" , if the grade id between 70% and 80% we print "B+" and soon
 # }
-  puts "Enter the number of students"
 
-  number = gets.chomp.to_i
-  number.times do |name|
-  puts "Enter the name of student #{name}"
+
+puts "Enter the number of Student:"
+
+number = gets.chomp.to_i
+student= Hash.new
+
+    number.times do |i|
+        i+=1
+        puts "Enter the name of student #{i}:"
     name = gets.chomp
-    puts "Enter the grade of studnt #{name}"
-    1.times do 
-   v1, v2, v3 = gets.chomp.split(",")
-   v1= v1.to_i
-   v2= v2.to_i
-   v3= v3.to_i
-   avg = (v1 +v2 +v3)/3
-  if(avg>90)
-    return true
-   elsif(avg>80 && avg<89)
-    puts "Letter grade: A"
-   elsif(avg>70 && avg<79)
-    puts "Letter grade: B+"
-   elsif(avg>60&& avg<69)
-    puts "Letter grade: B"
-   elsif(avg>50 && avg<59)
-    puts "Letter grade: C+"
-   elsif(avg>40 && avg<49)
-    puts "Letter grade: C"
+
+    puts "Enter the grades for #{name}:"
+    
+    m1,m2,m3 = gets.chomp.split(",")
+    mark1= m1.to_i
+    mark2= m2.to_i
+    mark3= m3.to_i
+
+    avg = (mark1+mark2+mark3)/3
+    if (avg>=90)
+        grade="A+"
+    elsif(avg<89 && avg>80)
+        grade="A"
+    elsif(avg<79 && avg>70)
+        grade="B+"
+    elsif(avg<69 && avg>60)
+        grade="B"
+    elsif(avg<59 && avg>50)
+        grade="C+"
+    elsif(avg<49 && avg>40)
+        grade="C"
     else
-        puts "NQ"
-   end 
-  end
+        grade="NQ"
+    end
+    # puts avg
+
+    student["#{i}"]=Hash.new
+    student["#{i}"]["Name"]=name
+    student["#{i}"]["Average"]=avg
+    student["#{i}"]["Grade"]=grade
 end
-output= Hash.new
 
-puts "Students grades and averages:"
-# output = {
-#     Name: name,
-#     Average : avg
-#     Grade:
+student.each do |i,j|
+    puts "Student grades and averages:"
+    puts "Name:#{student["#{i}"]["Name"]}"
+    puts "Average Marks:#{student["#{i}"]["Average"]}"
+    puts "Letter Grade: #{student["#{i}"]["Grade"]}"
+    puts " " 
+    end
 
-# }
+
 
 
 
