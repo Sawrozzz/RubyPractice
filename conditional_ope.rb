@@ -31,15 +31,15 @@
 
 # if conditional with '==' Operator
 
-# def comapare(a,b)
-#     if a==b 
-#         puts  true
-#     else
-#         return false
-#     end
-# end
+def comapare(a,b)
+    if a==b 
+        puts  true
+    else
+        return false
+    end
+end
 
-#  puts comapare(2,4)
+ puts comapare(2,4)
 
 #even numbers
 

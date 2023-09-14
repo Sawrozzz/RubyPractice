@@ -36,11 +36,11 @@
 # new_hash = Hash.new
  
 
-# salary={
-#     "Ram"=>15000,
-#     "Hari"=>20000,
-#     "Gita"=>30000
-# }
+salary={
+    "Ram"=>15000,
+    "Hari"=>20000,
+    "Gita"=>30000
+}
 
 # we can assign the value of the key to something else too using + ,- , *, /(they are called self explanetory)
 #   puts salary["Ram"]+=5000   
